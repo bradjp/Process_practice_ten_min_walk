@@ -1,3 +1,3 @@
 def ten_minutes_walk(directions)
-  false
+  directions.length == 10 ? true : false
 end
