@@ -13,8 +13,17 @@ describe 'ten_minutes_walk' do
     it 'returns false if directions do not return to start' do
       expect(ten_minutes_walk(['w', 'n'])).to eq(false)
     end
+    it 'returns false if directions do not return to start' do
+      expect(ten_minutes_walk(['s', 's', 'n'])).to eq(false)
+    end
+    it 'returns false if directions do not return to start' do
+      expect(ten_minutes_walk(['w', 'w', 'e', ])).to eq(false)
+    end
     it 'returns true if directions return to start' do
       expect(ten_minutes_walk(['w', 'e'])).to eq(true)
+    end
+    it 'returns true if directions return to start' do
+      expect(ten_minutes_walk(['n', 's'])).to eq(true)
     end
   end
 end
