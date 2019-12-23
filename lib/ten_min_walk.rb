@@ -1,4 +1,4 @@
 def ten_minutes_walk(directions)
-  # directions.length == 10 ? true : false
+  return false unless directions.length == 10
   directions.count('w') == directions.count('e') && directions.count('n') == directions.count('s')
 end
